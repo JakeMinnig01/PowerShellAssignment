@@ -1,0 +1,81 @@
+# Output Log - PowerShell CSV Parser Script
+
+This document contains sample command executions and their respective outputs for the MyApp.ps1 PowerShell script.
+
+---
+
+##  Test Case 1
+**Command:**
+```
+.\MyApp.ps1 "sample.txt" "both" "ascending"
+```
+
+**Output:**
+```
+1,1.5,2,3,4,6,7,Alpha,apple,banana,Zebra
+```
+
+---
+
+##  Test Case 2
+**Command:**
+```
+.\MyApp.ps1 "sample.txt" "both" "descending"
+```
+
+**Output:**
+```
+Zebra,banana,apple,Alpha,7,6,4,3,2,1.5,1
+```
+
+---
+
+##  Test Case 3
+**Command:**
+```
+.\MyApp.ps1 "sample.txt" "numeric" "descending"
+```
+
+**Output:**
+```
+7,6,4,3,2,1.5,1
+```
+
+---
+
+## Test Case 4
+**Command:**
+```
+.\MyApp.ps1 "sample.txt" "numeric" "ascending"
+```
+
+**Output:**
+```
+1,1.5,2,3,4,6,7
+```
+
+---
+
+##  Test Case 5
+**Command:**
+```
+.\MyApp.ps1 "sample.txt" "alpha" "descending"
+```
+
+**Output:**
+```
+Zebra,banana,apple,Alpha
+```
+
+---
+
+##  Test Case 6
+**Command:**
+```
+.\MyApp.ps1 "sample.txt" "alpha" "ascending"
+```
+
+**Output:**
+```
+Alpha,apple,banana,Zebra
+```
